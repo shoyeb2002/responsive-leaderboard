@@ -1,0 +1,60 @@
+body{
+    margin: 0px;
+    background:#d9d3f3;
+    font-family: poppins;
+}
+/* Top players styles start */
+.container{
+    width: 70%;
+    margin: auto;
+    background: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+}
+h2{
+    color:#562EFF;
+    font-size: 24px;
+    font-weight: 600;
+}
+.player{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    font-size: 18px;
+    
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+
+/* Top blog section styles */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
+}
+.blog img{
+    width: 177px;
+    height: 117px;
+}
+.blog{
+    display: flex;
+    gap: 16px;
+    
+}
+.blog p{
+    font-weight: 400;
+    color:#9F9F9F ;
+}
+.blog h4{
+    margin: 6px;
+}
+p span{
+    color: #562EFF;
+}
