@@ -1,15 +1,58 @@
 body{
     margin: 0px;
     background:#d9d3f3;
-    font-family: poppins;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    background: #562EFF;
+    padding-top: 26px;
+    padding-bottom: 17px;
+}
+nav{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+ul li {
+    list-style: none;
+    font-size: 18px;
+    color: white;
+}
+li img{
+    height: 51px;
+    width: 51px;
+}
+.logo{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    
+}
+.logo img{
+    width: 40px;
+    height: 51px;
+    
+}
+.logo h3 {
+    color: white;
+    
 }
 /* Top players styles start */
 .container{
-    width: 70%;
+    width: 60%;
     margin: auto;
     background: white;
     padding: 15px 30px;
-    border-radius: 5px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 .players{
     display: grid;
@@ -48,7 +91,7 @@ h2{
     gap: 16px;
     
 }
-.blog p{
+p{
     font-weight: 400;
     color:#9F9F9F ;
 }
@@ -57,4 +100,95 @@ h2{
 }
 p span{
     color: #562EFF;
+}
+/* course section style */
+.courses{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.course-title{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 19px;
+    margin-bottom: 7px;
+}
+.course{
+    box-shadow: 0px 5px 13px rgb(228, 225, 225) ;
+    padding: 13px 17px 16px 11px;
+    border-radius: 15px;
+}
+.course>img{
+    width: 224px;
+    height: 104px;
+}
+.course p{
+    margin-right: 14px;
+}
+small{
+    color:#ED6B4F ;
+}
+.star img{
+    width: 12.25px;
+    height: 11.75px;
+}
+.card-bottom{
+    display: flex;
+    align-items: center;
+    gap:10px ;
+}
+.clock{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background-color: #FFE4E8;
+    color: #fc6a80;
+    width: 94px;
+    height: 29px;
+    padding: 6px;
+    border-radius:15px;
+}
+.clock img{
+    width: 20px;
+    
+}
+.hide{
+    display: none;
+}
+
+
+@media screen and (max-width:576px) {
+    .container{
+        width: 100%;
+    }
+    .header{
+    
+    }
+    nav{
+        flex-direction: column;
+    }
+    ul{
+        flex-direction: column;
+    }
+    .players{
+        grid-template-columns: 1fr 1fr;
+    }
+    .blogs{
+        grid-template-columns: 1fr;
+        
+    }
+    .courses{
+        flex-direction: column;
+        padding: 70px;
+    }
+    .course{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    h2{
+        text-align: center;
+    }
+
+   
 }
